@@ -1,0 +1,307 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: teal;
+}
+
+/* Skills Section */
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.skills-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 28px;
+    color: #444;
+    margin: 5px 0;
+}
+
+.hero h3 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #666;
+}
+
+.highlight {
+    font-weight: bold;
+    color: teal;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 24px;
+    color: teal;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: darkcyan;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: darkcyan;
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Skills Wrapper */
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Skill Card */
+.skill-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card i {
+    font-size: 40px;
+    color: teal;
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #666;
+}
+.projects-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    width: 300px; /* Set a fixed width for project cards */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+.project-card img {
+    width: 100%;  /* Make sure it fits inside the card */
+    max-width: 300px; /* Set a max width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: auto; /* Center the image */
+    border-radius: 10px; /* Optional: Round edges */
+}
+
+
+.project-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #666;
+}
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.contact-card i {
+    font-size: 30px;
+    color: teal;
+    margin-bottom: 10px;
+}
+
+.contact-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form .btn:hover {
+    background-color: darkcyan;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
